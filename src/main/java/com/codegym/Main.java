@@ -67,6 +67,7 @@ public class Main {
         main.testMysqlData(ids);
         long stopMysql = System.currentTimeMillis();
 
+        System.out.println("Tiempo que tardan en obtener los datos:");
         System.out.printf("%s:\t%d ms\n", "Redis", (stopRedis - startRedis));
         System.out.printf("%s:\t%d ms\n", "MySQL", (stopMysql - startMysql));
 
