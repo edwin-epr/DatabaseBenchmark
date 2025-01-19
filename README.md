@@ -56,7 +56,7 @@ exit;
 exit
 ```
 
-4. Ejecute el siguiente script:
+4. Ejecute el siguiente script para correr la aplicación:
 ```bash
 ./executeApplication.sh
 ```
