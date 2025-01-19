@@ -17,10 +17,6 @@ docker ps
 ```
 - Copia el archivo `dump-hibernate-final.sql` desde la maquina hacia el contenedor de MySQL:
 ```bash
-docker run -d -p 33060:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD=secret mysql
-``` 
-- Ejecutar el siguiente comando para copiar el archivo `dump-hibernate-final.sql` al contenedor de MySQL: 
-```bash
 docker cp dump-hibernate-final.sql <ID_contenedor>:/tmp/
 ```
     
@@ -41,7 +37,10 @@ mysql -u root -p
 source /tmp/dump-hibernate-final.sql
 ```
 
-- Ejecutar el siguiente comando para verificar que la base de datos fue creada:
+- Ejecutar los siguientes comandos para verificar que la base de datos fue creada:
+```bash
+use world;
+```
 ```bash
 select * from city;
 ```
