@@ -1,5 +1,12 @@
 # Projecto Final del módulo 4
 
+Tecnologías utilizadas:
+- java 18
+- docker
+- hibernate
+- MySQL
+- Redis
+
 Para ejecutar la aplicación, haga primero lo siguiente:
 
 1. Ejecute el servidor de MySQL como un contenedor de docker:
