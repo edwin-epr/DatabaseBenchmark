@@ -8,8 +8,6 @@ import java.util.Set;
 
 @Setter
 @Getter
-@ToString
-@EqualsAndHashCode
 @Entity
 @Table(schema = "world", name = "country")
 public class Country {
@@ -60,7 +58,7 @@ public class Country {
     @JoinColumn(name = "capital")
     private City city;
 
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "country_id")
     private Set<CountryLanguage> languages;
 }

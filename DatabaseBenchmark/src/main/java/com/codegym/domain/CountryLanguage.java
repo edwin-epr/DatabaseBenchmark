@@ -1,18 +1,14 @@
 package com.codegym.domain;
 
 import jakarta.persistence.*;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 import org.hibernate.annotations.Type;
 
 import java.math.BigDecimal;
 
 @Setter
 @Getter
-@ToString
-@EqualsAndHashCode
 @Entity
 @Table(schema = "world", name = "country_language")
 public class CountryLanguage {
