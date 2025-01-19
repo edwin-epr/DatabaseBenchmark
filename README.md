@@ -30,23 +30,23 @@ docker exec -it <ID_contenedor> bash
 mysql -u root -p
 ```
 
-- password: secret <ENTER>
+- Cuando te pida el password, introduce la contraseña configurada: root <ENTER>
 
 - Ejecutar el siguiente comando para crear la base de datos:
-```bash
+```sql
 source /tmp/dump-hibernate-final.sql
 ```
 
 - Ejecutar los siguientes comandos para verificar que la base de datos fue creada:
-```bash
+```sql
 use world;
 ```
-```bash
+```sql
 select * from city;
 ```
 
 - Salir de MySQL:
-```bash
+```sql
 exit;
 ```
 
